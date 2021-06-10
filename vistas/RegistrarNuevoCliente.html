@@ -1,0 +1,59 @@
+<br>
+<form action="" method="POST" autocomplete="off">
+    <div class="row">
+        <!--Cédula-->
+        <div class="col-md form-group">
+            <label for="Cedula">C&eacute;dula</label>
+            <input type="number" name="Cedula" class="form-control" id="Cedula">
+        </div>
+        <!--Nombres--->
+        <div class="col-md form-group">
+            <label for="Nombres">Nombres</label>
+            <input type="text" name="Nombres" class="form-control" id="Nombres">
+        </div>
+        <!--Apellidos--->
+        <div class="col-md form-group">
+            <label for="Apellidos">Apellidos</label>
+            <input type="text" name="Apellidos" class="form-control" id="Apellidos">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Fecha Nacimiento -->
+        <script src="./js/FechaNacimiento.js"></script>
+        <div class="col-md form-group">
+            <label for="FechaNacimiento">Fecha Nacimiento</label>
+            <input type="text" name="FechaNacimiento" class="form-control" id="FechaNacimiento">
+        </div>
+        <!--Lugar de Residencia--->
+        <div class="col-md form-group">
+            <label for="LugarResidencia">Lugar Residencia</label>
+            <input type="text" name="LugarResidencia" class="form-control" id="LugarResidencia">
+        </div>
+        <!--Telefono--->
+        <div class="col-md form-group">
+            <label for="Telefono">Tel&eacute;fono</label>
+            <input type="text" name="Telefono" class="form-control" id="Telefono">
+        </div>
+    </div>
+    <div class="row">
+        <!--Correo Electronico--->
+        <div class="col-md form-group">
+            <label for="CorreoElectronico">Correo Electr&oacute;nico</label>
+            <input type="email" name="CorreoElectronico" class="form-control" id="CorreoElectronico">
+        </div>
+        <!--Valor Plan Seguro--->
+        <div class="col-md form-group">
+            <label for="ValorPlanSeguro">Valor Plan Seguro</label>
+            <input type="number" name="ValorPlanSeguro" class="form-control" id="ValorPlanSeguro">
+        </div>
+        <!--Monto Asegurado--->
+        <div class="col-md form-group">
+            <label for="MontoAsegurado">Monto Asegurado</label>
+            <input type="number" name="MontoAsegurado" class="form-control" id="MontoAsegurado">
+        </div>
+    </div>
+    <div class="col-md form-group text-center">
+        <script src="./js/InsertarDatos.js"></script>
+        <button type="submit" name="registrar" id="registrar" class="btn btn-success form-control">Registrar Cliente</button>
+    </div>
+</form>
