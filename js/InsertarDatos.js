@@ -8,29 +8,29 @@ $(function() {
         });
 
 
-        var url = "http://segurosucp.azurewebsites.net/api/Clientes";
+        // var url = "http://segurosucp.azurewebsites.net/api/Clientes";
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url);
+        // var xhr = new XMLHttpRequest();
+        // xhr.open("GET", url);
 
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4) {
-                console.log(xhr.status);
-                console.log(xhr.responseText);
-            }
-        };
+        // xhr.onreadystatechange = function() {
+        //     if (xhr.readyState === 4) {
+        //         console.log(xhr.status);
+        //         console.log(xhr.responseText);
+        //     }
+        // };
 
-        xhr.send();
+        // xhr.send();
 
 
-        // var settings = {
-        //     dataType: "jsonp",
-        //     url: "http://segurosucp.azurewebsites.net/api/Clientes"
-        // }
+        var settings = {
+            dataType: "jsonp",
+            url: "http://segurosucp.azurewebsites.net/api/Clientes"
+        }
 
-        // $.ajax(settings).done(function(response) {
-        //     console.log(response);
-        // });
+        $.ajax(settings).done(function(response) {
+            console.log(response);
+        });
 
         // fetch('http://segurosucp.azurewebsites.net/api/Clientes', {
         //         // method: 'GET', // or 'PUT',                
